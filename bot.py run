@@ -47,8 +47,8 @@ async def help_command(ctx):
 
 # Replace 'YOUR_DISCORD_BOT_TOKEN' with your actual bot token
 async def login() {
-  try {
-    await client.login(process.env.TOKEN);
+  try:
+    await bot.login(process.env.TOKEN);
     console.log(`\x1b[36m%s\x1b[0m`, `|    🐇 Logged in as ${client.user.tag}`);
   } catch (error) {
     console.error('Failed to log in:', error);
