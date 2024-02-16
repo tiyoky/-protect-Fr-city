@@ -31,7 +31,7 @@ async def purge(ctx, amount: int):
     await ctx.channel.purge(limit=amount + 1)
     await ctx.send(f'{amount} messages purged.')
 
-@bot.command(name='help')
+@bot.command(name='aide')
 async def help_command(ctx):
     # List of commands and their descriptions
     help_message = (
