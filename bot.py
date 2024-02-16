@@ -36,11 +36,11 @@ async def help_command(ctx):
     # List of commands and their descriptions
     help_message = (
         "```\n"
-        "+ban @user - Ban a user\n"
-        "+kick @user - Kick a user\n"
-        "+mute @user - Mute a user\n"
-        "+purge <amount> - Purge a specific amount of messages\n"
-        "+help - Show this help message\n"
+        "+ban @user - Banir un user\n"
+        "+kick @user - Kick un user\n"
+        "+mute @user - Mute un user\n"
+        "+purge <amount> - suprime le nombre de msg indique\n"
+        "+aide - montre tout les commandes\n"
         "```"
     )
     await ctx.send(help_message)
@@ -48,7 +48,7 @@ async def help_command(ctx):
 # Replace 'YOUR_DISCORD_BOT_TOKEN' with your actual bot token
 async def login() {
   try:
-    await bot.login(process.env.TOKEN);
+    await client.login(process.env.TOKEN);
     console.log(`\x1b[36m%s\x1b[0m`, `|    🐇 Logged in as ${client.user.tag}`);
   } catch (error) {
     console.error('Failed to log in:', error);
